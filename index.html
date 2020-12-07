@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <canvas id="granim-canvas"></canvas>
+    <header>
+        <nav class="flex">
+            <a href="index.html" class="brand active">jess'co</a>
+            <a href="about.html">À propos</a>
+            <a href="projects.html">Projets</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main id="homepage">
+        <section>
+            <figure class="flex">
+                <figcaption class="flex">
+                    <h1>
+                        Design utile<br>
+                        Développement fonctionnel
+                    </h1>
+                    <p>
+                        Bonjour à toi.<br>
+                        Je m’appelle Jessica Chapuis et je suis developpeur graphique.<br>
+                        J'allie design graphique et développement web afin de construire des solutions utiles et esthétiques.<br>
+                        <a href="#projects.html" class="btn cta">En voir plus</a>
+                    </p>
+                </figcaption>
+                <img src="img/illustrations/about-me.svg" alt="Portrait de Jessica Chapuis">
+            </figure>
+        </section>
+    </main>
+
+    <script src="js/granim.min.js"></script>
+
+    <script>
+        var granimInstance = new Granim({
+            element: '#granim-canvas',
+            direction : 'top-bottom',
+            name: 'granim',
+            opacity: [1, 1],
+            states : {
+                "default-state": {
+                    gradients: [
+                        ['#F9F8F6', '#F9F8F6'],
+                        ['#F9F8F6', '#4a525e'],
+                        ['#4a525e', '#4a525e'],
+                        ['#4a525e', '#F9F8F6'],
+                    ],
+                    transitionSpeed: 14400000
+                }
+            }
+        });
+    </script>
+</body>
+</html>

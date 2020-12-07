@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Umbra";
+    src: url("/fonts/ThePyteFoundry--Umbra.woff") format("woff");
+   }
+
+@font-face {
+    font-family: "Antique";
+    src: url("/fonts/AntiqueOliveStd-Nord.woff") format("woff");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital@0;1&display=swap');
